@@ -8,19 +8,20 @@
     <title>video player</title>
 </head>
 <body>
-    <div class="wrapper">        
+    
+    <div class="wrapper">     
         <div class="player">
-            <video id="video" poster="./images/poster.jpg" src="./videos/lofi.mp4"></video>
+            <video id="video" poster="./images/thumbnail.png" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
             <div class="player-overlay">                
-                <h2 class="player-title">Musica para programar</h2>
+                <h2 class="player-title">Custom video player</h2>
                 <div class="player-actions">
                     <button class="button" aria-label="retroceder 10 segundos" title="retroceder 10 segundo" hidden id="backward"></button>            
                     <button class="button" aria-label="Reproducir" title="Reproducir"  id="play"></button>
-                    <button class="button" aria-label="Pausar" title="Pausar"  hidden id="pause"></button>
+                    <button class="button" aria-label="Pausar" title="Pausar"  hidden id="pause"></button>                    
                     <button class="button" aria-label="avanzar 10 segundos" title="avanzar 10 segundo"  hidden id="forward"></button>    
                 </div>            
                 
-                <div class="player-progress">
+                <div class="player-progress">                    
                     <input id="progress" min="0" value="0"  step="1" type="range">
                 </div>
             </div>            
