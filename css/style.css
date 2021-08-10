@@ -1,0 +1,91 @@
+body {
+    background-color: #26B4BC;
+}
+
+.button {
+    inline-size: 32px;
+    block-size: 32px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player {  
+    position: relative;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.button {
+    transform: scale(.9);
+}
+
+.player-title {
+    position: absolute;
+    color:white;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.player-actions {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 2;
+    gap: 20px;
+}
+
+.player-progress {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0; 
+    padding: 15px;
+    display: flex;
+}
+
+.player-overlay {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .player-overlay {
+    opacity: 1;
+}
+
+.player-progress input {
+    flex: 1;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#backward {
+    background-image: url("../images/-10.svg");
+}
+
+#forward {
+    background-image: url("../images/+10.svg");
+}
+
+#play {
+    background-image: url("../images/play.svg");
+}
+
+#pause {
+    background-image: url("../images/pause.svg");
+}
